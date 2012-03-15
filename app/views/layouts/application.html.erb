@@ -13,7 +13,7 @@
     wmode: "transparent"
   };
   var attributes = false;
-  swfobject.embedSWF( 'ifre.swf', 'itsfree', '100%', '100%', '9.0.0', 'expressInstall.swf', flashvars, params, attributes);
+  swfobject.embedSWF( 'ifre.swf', 'itsfree', '100%', '100%', '9.0.0', 'expressInstall.swf',{loop:(window.location.href.indexOf('loop')>-1)?'1':'0'},{wmode: 'transparent'});
   </script>
   <%= csrf_meta_tags %>
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
