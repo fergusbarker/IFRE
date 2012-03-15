@@ -3,9 +3,15 @@
 <head>
   <title>IFRE</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag    "custom",      :media => "all" %>
   <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "swfobject" %>
+  <script type="text/javascript"> swfobject.registerObject("myFlashContent","9.0.0"); </script>
   <%= csrf_meta_tags %>
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+  <% render 'layouts/swfobject' %>
+
 </head>
 <body>
 
