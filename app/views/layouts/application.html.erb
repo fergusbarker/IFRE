@@ -7,7 +7,13 @@
   <%= javascript_include_tag "application" %>
   <%= javascript_include_tag "swfobject" %>
   <script type="text/javascript">
-  swfobject.embedSWF( 'ifre.swf', 'itsfree', '100%', '100%', '9.0.0', 'expressInstall.swf',{loop:(window.location.href.indexOf('loop')>-1)?'1':'0'},{wmode: 'transparent'});
+  var flashvars = false;
+  var params = {
+    loop: "false",
+    wmode: "transparent"
+  };
+  var attributes = false;
+  swfobject.embedSWF( 'ifre.swf', 'itsfree', '100%', '100%', '9.0.0', 'expressInstall.swf', flashvars, params, attributes);
   </script>
   <%= csrf_meta_tags %>
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
