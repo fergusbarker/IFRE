@@ -1,11 +1,11 @@
 default_run_options[:pty] = true
-set :application, "twit_clone"
-set :repository,  "git@github.com:fergusbarker/twit_clone.git"
+set :application, "IFRE"
+set :repository,  "git@github.com:fergusbarker/IFRE.git"
 
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
-set :deploy_to, "/var/rails"
+set :deploy_to, "/var/ifre"
 set :user, "serv"
 set :password, "5469726f6e"
 set :branch, "master"
