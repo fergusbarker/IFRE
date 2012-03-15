@@ -5,7 +5,7 @@ set :repository,  "git@github.com:fergusbarker/IFRE.git"
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
-set :deploy_to, "/var/ifre"
+set :deploy_to, "/home/serv/rails/ifre"
 set :user, "serv"
 set :password, "5469726f6e"
 set :branch, "master"
